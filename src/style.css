@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Josefin Sans", sans-serif;
+  src: url(./assets/static/JosefinSans-ExtraLightItalic.ttf),
+    url(./assets/static/JosefinSans-Regular.ttf);
+}
+
+body {
+  background-color: #1c2c59;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content {
+  height: 95%;
+  width: 90%;
+}
+#content::before {
+  content: "";
+  --mask: radial-gradient(56.6px at 50% 78px, #000 99%, #0000 101%)
+      calc(50% - 60px) 0/120px 51% repeat-x,
+    radial-gradient(56.6px at 50% -48px, #0000 99%, #000 101%) 50% 30px/120px
+      calc(51% - 30px) repeat-x,
+    radial-gradient(56.6px at 50% calc(100% - 78px), #000 99%, #0000 101%)
+      calc(50% - 60px) 100%/120px 51% repeat-x,
+    radial-gradient(56.6px at 50% calc(100% + 48px), #0000 99%, #000 101%) 50%
+      calc(100% - 30px) / 120px calc(51% - 30px) repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  position: absolute;
+  z-index: -1;
+  transform-origin: 50% 50%;
+  height: 95%;
+  background-color: white;
+  width: 90%;
+}
+
+header {
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header nav button {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #1c2c59;
+  letter-spacing: 0.3rem;
+  background-color: white;
+  border: none;
+}
+
+button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

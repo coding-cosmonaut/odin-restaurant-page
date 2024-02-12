@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Josefin Sans", sans-serif;;
+    src: url(./assets/static/JosefinSans-ExtraLightItalic.ttf),
+    url(./assets/static/JosefinSans-Regular.ttf);
+}
+
+.contain-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #1c2c59;
+}
