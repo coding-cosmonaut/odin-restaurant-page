@@ -1,0 +1,19 @@
+.contain-about-div {
+    height: 50%;
+    width: 50%;
+    transform: translate(50%, 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain-about-div p {
+    line-height: 4rem;
+    font-size: 1.5rem;
+}
+
+.contain-about-div p::first-letter {
+    font-weight: bold;
+    font-size: 2rem;
+}
